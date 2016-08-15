@@ -1,9 +1,9 @@
 language: java
 install: bundle install
 before_script: 
-	- cd pc-hub/bin
-	- rake db:migrate RAILS_ENV=development
-	- rails s
+  - cd pc-hub/bin
+  - rake db:migrate RAILS_ENV=development
+  - rails s
 script:
-	- cd ../../PCHubTest
-	- mvn: test
+  - cd ../../PCHubTest
+  - mvn test
