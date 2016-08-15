@@ -1,5 +1,8 @@
 language: java
 install: 
+  - curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+  - sudo apt-get install -y nodejs
+  - gem install rails -v 4.2.6
   - cd pc-hub
   - bundle install
 before_script: 
