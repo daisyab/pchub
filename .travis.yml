@@ -9,5 +9,6 @@ before_script:
   - cd bin
   - rake db:migrate RAILS_ENV=development
 script:
+  - rails s
   - cd ../../PCHubTest
   - mvn test
